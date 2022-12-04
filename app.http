@@ -1,0 +1,33 @@
+GET http://localhost:3000/todos/5/
+
+###
+GET http://localhost:3000/agenda/?date=2021-02-22
+
+###
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "id":5,
+    "todo":"Learn React JS",
+    "priority":"HIGH",
+    "status":"DONE",
+    "category":"HOME",
+    "dueDate":"2021-02-22"
+}
+
+###
+
+PUT http://localhost:3000/todos/2/
+Content-Type: application/json
+
+{
+  "category":"HOME"
+}
+
+###
+
+DELETE http://localhost:3000/todos/5/
